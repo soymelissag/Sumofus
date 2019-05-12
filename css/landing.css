@@ -1,0 +1,84 @@
+font-family: 'Poppins', sans-serif;
+}
+/* The navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #F9D47B;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+float: left;
+display: block;
+color: #ff4769;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+background: #fff;
+color: #ff4769;
+}
+
+/* Container holding the image and .butthe text */
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+	opacity: 2;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  bottom: 200px;
+  left:900px;
+  color: black;
+  padding-left: 200px;
+}
+
+html{
+	height: 100%;
+}
+body{
+	background-image: url("/Users/melissagutierrez/Desktop/Sum of Us/images/Cover2.jpg");
+	background-size: cover;
+	background-position: fixed;
+	color:hotpink;
+}
+h1{
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'Poppins', monospace;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+	text-shadow: 0px 8px 13px rgba(0,0,0,0.1);
+	text-shadow: 0px 18px 23px rgba(0,0,0,0.1);
+}
+h3{
+font-size:17px;
+	font-family: 'Poppins', sans-serif;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+	text-shadow: 0px 8px 13px rgba(0,0,0,0.1);
+	text-shadow: 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+#content{
+	text-align:center;
+	padding-top: 35%;
+
+}
+hr{
+/* a horizontal rule can really help organize and 'clean up' landing pages... */
+	visibility:hidden;
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.btn-default{
+	font-family: 'Space Mono', monospace;
+}

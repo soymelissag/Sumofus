@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nicaraguan Guide</title>
+
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/style2.css">
+<link rel="javascript" href="js/cubans.js">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="landing.html">Home</a>
+    <a href="#about">About</a>
+  </div>
+  <div class="main">
+  </div>
+<br>
+<br>
+<title>Nicaraguan Guide</title>
+
+<h1>Nicaraguan Guide</h1>
+<img src="images/NiLand-01.svg" alt="cubans" id="header" class="new">
+<div class="w3-container">
+ <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Influence')">Influence</button>
+   </a>
+     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Culture')">Culture</button>
+   </a>
+   <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Food')">Food</button>
+   </a>
+ </div>
+</div>
+
+
+ <div id="Influence" class="w3-container city icontent">
+   <h2>Influence</h2>
+   <p>According to the 2010 Census counted more than 120,000 Nicaraguans in Miami-Dade County. Due to the Sandinista takeover in 1979, a lot of Nicaraguans uprooted and migrated to Miami. Though the initial move was not easy, Nicaraguans preserves and remain one of the largest immigrant groups.</p>
+   <h2>Nicaraguan conversation</h2>
+   <p>In Miami, Nicaraguan slang has been proven impactful on the spanish language. Here are some unique phrases coined by Nicaraguans.</p>
+   <div class="w3-content w3-display-container">
+     <img class="mySlides" src="images/chocho.svg" style="width:100%">
+     <img class="mySlides" src="images/coco.svg" style="width:100%">
+     <img class="mySlides" src="images/puchica.svg" style="width:100%">
+
+
+     <button class="w3-button w3-white w3-display-left" onclick="plusDivsOne(-1)">&#10094;</button>
+     <button class="w3-button w3-white w3-display-right" onclick="plusDivsOne(1)">&#10095;</button>
+  </div>
+
+   <script>
+   var slideIndexOne = 1;
+   showDivsOne(slideIndexOne);
+
+   function plusDivsOne(n) {
+     showDivsOne(slideIndexOne += n);
+   }
+
+   function showDivsOne(n) {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     if (n > x.length) {slideIndexOne = 1}
+     if (n < 1) {slideIndexOne = x.length}
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     x[slideIndexOne-1].style.display = "block";
+   }
+   </script>
+ </div>
+
+
+
+
+ <div id="Culture" class="w3-container city tabcontent">
+   <h2>Culture</h2>
+   <p>Sweetwater is often referred to as Little Nicaragua. Due to the affordable rent, early immigrants were able to adjust to American life.</p>
+
+   <h2> Nicaraguan Heritage</h2>
+   <p>There’s no denying the unique twist of Nicaraguan culture. In Miami, quinceñara pictures to cafecito culture is alive and well.</p>
+   <div class="w3-content w3-display-container">
+     <img class="ISlides" src="images/purisima.jpg" style="width:100%">
+     <img class="ISlides" src="images/raspados.jpg" style="width:100%">
+
+     <button class="w3-button w3-white w3-display-left" onclick="plusDivsTwo(-1)">&#10094;</button>
+     <button class="w3-button w3-white w3-display-right" onclick="plusDivsTwo(1)">&#10095;</button>
+   </div>
+   <script>
+   var slideIndexTwo = 1;
+   showDivsTwo(slideIndexTwo);
+
+   function plusDivsTwo(n) {
+     showDivsTwo(slideIndexTwo += n);
+   }
+
+   function showDivsTwo(n) {
+     var i;
+     var x = document.getElementsByClassName("ISlides");
+     if (n > x.length) {slideIndexTwo = 1}
+     if (n < 1) {slideIndexTwo = x.length}
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     x[slideIndexTwo-1].style.display = "block";
+   }
+   </script>
+ </div>
+
+
+
+
+ <div id="Food" class="w3-container city tabcontent">
+   <h2>Food</h2>
+   <p>From rice and beans to elaborately wrapped meals, Nicaraguan food is a Miami staple.</p>
+
+   <h2>Popular Nicaraguan Dishes</h2>
+   <div class="w3-content w3-display-container">
+     <img class="FSlides" src="images/vigoron.jpg" style="width:100%">
+     <img class="FSlides" src="images/gallopinto.jpg" style="width:100%">
+
+     <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+   </div>
+   <script>
+   var slideIndex = 1;
+   showDivs(slideIndex);
+
+   function plusDivs(n) {
+     showDivs(slideIndex += n);
+   }
+
+   function showDivs(n) {
+     var i;
+     var x = document.getElementsByClassName("FSlides");
+     if (n > x.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = x.length}
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     x[slideIndex-1].style.display = "block";
+   }
+   </script>
+ </div>
+
+
+<script>
+function openCity(evt, cityName) {
+ var i, x, tabcontent, tablinks, icontent;
+ x = document.getElementsByClassName("city");
+ for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+ }
+ // Get all elements with class="tabcontent" and hide them
+ tabcontent = document.getElementsByClassName("tabcontent", "icontent");
+ for (i = 0; i < tabcontent.length; i++) {
+   tabcontent[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</div>
+
+</body>
+</html>
